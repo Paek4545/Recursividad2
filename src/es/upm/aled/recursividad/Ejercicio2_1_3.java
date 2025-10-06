@@ -12,4 +12,6 @@ public class Ejercicio2_1_3 {
 		return ex233(n-3) + n + ex233(n-2) + n; 
 		} 
 }
-// Valor que devuelve: 311361142246
+// Valor que devuelve: 311361142246 --> Empezamos por ex233(6) --> ex233(3) y ex233(4)
+// que a su vez calculan ex233(1), ex233(0), ex233(2) y ex233(1) calcula a su vez
+// ex233(-2) y ex223(-1).
