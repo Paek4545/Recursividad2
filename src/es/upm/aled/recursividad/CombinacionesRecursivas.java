@@ -38,10 +38,12 @@ public class CombinacionesRecursivas {
 		// Paso recursivo
 		// Caso 1: excluimos el elemento actual
 		// No quiero incluir conjunto[index] en la combinación actual, así que paso al siguiente elemento
-		
+		// Es decir, si quito este método recursivo, solo saldría por pantalla la combinación abc
+		backtrack(conjunto, index +1, actual, resultado);
 		
 		// Caso 2: incluimos el elemento actual
 		// Sí quiero incluir conjunto[index] en la combinación actual, y luego sigo con el siguiente elemento
+		// Es decir, si quito el método recursivo, no saldría en pantalla la combinación abc
 		backtrack(conjunto, index + 1, actual + conjunto[index], resultado);
 	}
 }
